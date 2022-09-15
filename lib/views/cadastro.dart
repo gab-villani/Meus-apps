@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class Cadastro extends StatelessWidget {
@@ -59,7 +61,7 @@ class Cadastro extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
                 color: Colors.blue,
               ),
-              child: Text("Teste"),
+              child: Text("Teste",style: TextStyle(fontSize:20,fontWeight: FontWeight.bold  ),),
             ),
           )
       
