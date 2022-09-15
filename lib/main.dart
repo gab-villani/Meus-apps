@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width * 0.7,
               child: TextField(
-                decoration: InputDecoration(label: Text('Email')),
+                decoration: InputDecoration(label: Text('Email',style: TextStyle(fontWeight: FontWeight.bold))),
                 keyboardType: TextInputType.emailAddress,
               ),
             ),
@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 0.7,
               child: TextField(
                 decoration: InputDecoration(
-                  label: Text('Senha'),
+                  label: Text('Senha',style: TextStyle(fontWeight: FontWeight.bold) ,),
                 ),
                 obscureText: true,
               ),
@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => Operation()));
                 },
-                child: Text('Login'),
+                child: Text('Login',style: TextStyle(fontWeight: FontWeight.w900,color:Color.fromARGB(255, 238, 232, 170))),
               ),
             ),
             Container(
@@ -63,7 +63,7 @@ class Home extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => Cadastro()),
                   );
                 },
-                child: Text('Cadastro'),
+                child: Text('Cadastro',style: TextStyle(fontWeight: FontWeight.w900,color: Color.fromARGB(255, 0, 255, 60)),),
               ),
             ),
           ],
